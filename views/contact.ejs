@@ -1,0 +1,59 @@
+<% include partials/header %>
+    <title>Contact | Lox, Stocks and Bagels</title>
+	<meta name="description" content="If you have any questions, concerns, or complaints, feel free to contact us here or email us.">
+ 	<meta name="keywords" content="bagels, eugene, oregon, lox, stocks, bagels, organic, food, catering, locally-sourced, contact">
+ 	<!--Stylesheets-->
+	<% include partials/stylesheets %>
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<a class="navbar-brand" href="/"><img src="assets/images/style/favicon.png" style="width: 40px;"></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav mr-auto">
+      			<li class="nav-item">
+        			<a class="nav-link" href="/">Home</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="/menu">Menu</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="/about">About Us</a>
+      			</li>
+      			<li class="nav-item active">
+        			<a class="nav-link" href="/contact">Contact <span class="sr-only">(current)</span></a>
+      			</li>
+    		</ul>
+    		<div class="nav-links" style="color: #FFF;">
+        		<a id="fbook-a" href="https://www.facebook.com/loxstocksbagels"><i class="fa fa-facebook"></i></a>
+        		<a id="yelp-a" href="https://www.yelp.com/biz/lox-stocks-and-bagels-eugene-2"><i class="fa fa-yelp"></i></a>
+        		<a id="mail-a" href="mailto:loxstocksbagels@hotmail.com"><i class="fa fa-envelope"></i></a>
+    		</div>
+  		</div>
+	</nav>
+	<!-- Main Banner Image -->
+	<% include partials/banner %>
+	<br>
+	<div class="body-main">
+		<!-- Contact Form -->
+		<div class="contact_form">
+        	<form name="contact-form" action="mailto:loxstocksbagels@hotmail.com?subject=Form Submission" method="post" enctype="text/plain">
+            	<label id="form_title" for="name">If you have any questions, concerns, or complaints, feel free to tell us how you feel using the form below.</label>
+            	<br>
+            	<hr width="95%">
+            	<br>
+            	<label>Name</label>
+            	<input type="text" id="name" name="name" placeholder="Your name..." required>
+            	<label for="email">Email</label>
+            	<input type="email" id="email" name="email" placeholder="Your email..." required>
+            	<label for="message">Message</label>
+            	<textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea required>
+            	<input type="submit" value="Submit">
+        	</form>
+		</div>
+		<br>
+		<!-- Footer -->
+<% include partials/footer %>
